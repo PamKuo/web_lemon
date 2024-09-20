@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>檸檬‧Lemon</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/myall.css">
+    <style>
+        body{
+            /* background-image: url(./images/lemon06.avif); */
+            background-image: linear-gradient(180deg,rgba(163, 238, 226, 0.7), rgba(0,0,0,0.3)), url(./images/lemon06.avif);
+            /* linear-gradient是漸層 第四個數值是透明度 */
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        @media screen and (max-width:768px) {
+            body{
+                background-image: linear-gradient(180deg,rgba(163, 238, 226, 0.7), rgba(0,0,0,0.3)), url(./images/lemon07.avif);
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <!-- 選單 -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-900 text-warning" href="#">檸檬‧Lemon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./20240408-lemon_index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./20240408-lemon_about.html">關於我們</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./20240408-lemon_about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  產品介紹
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./20240408-lemon_lemon.html">檸檬汁系列</a></li>
+                  <li><a class="dropdown-item" href="./20240415-lemon_lemon2.html">檸檬蛋糕</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">檸檬冰淇淋</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+    <!-- 文案 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3  offset-5 d-none d-md-block">
+                <div class="word01 bg-secondary p-3 m-3">
+                    <div class="h4 ft-900 text-white">清新酸爽，檸檬風味</div>
+                </div>
+            </div>
+            <div class="col-md-3  offset-4 d-none d-md-block">
+                <div class="word01 bg-secondary p-3 m-3">
+                    <div class="h4 ft-900 text-white">一口檸檬，蛋糕香氣</div>
+                </div>
+            </div>
+            <div class="col-md-3  offset-5 d-none d-md-block">
+                <div class="word01 bg-secondary p-3 m-3">
+                    <div class="h4 ft-900 text-white">檸檬香氣，冰涼甜蜜</div>
+                </div>
+            </div>
+            <div class="col-md-3  offset-4 d-none d-md-block">
+                <div class="word01 bg-secondary p-3 m-3">
+                    <div class="h4 ft-900 text-white">一口檸檬，萬般清新</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

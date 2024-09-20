@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>檸檬‧Lemon - 關於我們</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/myall.css">
+    <style>
+        .banner {
+            height: 220px;
+            background-image: url(./images/lemon09.avif);
+            background-image: linear-gradient(180deg, rgba(5, 5, 4, 0.7), rgba(0, 0, 0, 0.3)), url(./images/lemon09.avif);
+
+        }
+
+        .bg-cover {
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .timeline-section{
+            position: relative;
+        }
+        .timeline-section::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background-color: var(--mycolor02);
+            left:50%;
+            transform: translateX(-50%);
+        }
+        .timeline-section-pointer{
+            position: relative;
+        }
+        .timeline-section-pointer::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-color: var(--mycolor08);
+            border: 5px solid var(--mycolor02);
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline-section-pointer:hover::before{
+            background-color: var(--mycolor02);
+            border: 5px solid var(--mycolor08);
+        }
+
+        @media screen and (max-width:768px){
+            .timeline-section::before{
+                left: -10px;
+                transform: none;
+                width: 5px;
+            }
+            .timeline-section-pointer::before{
+                left: -5px;
+                transform: none;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- 選單 -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-900 text-warning" href="#">檸檬‧Lemon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./20240408-lemon_index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./20240408-lemon_about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            產品介紹
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./20240408-lemon_lemon.html">檸檬汁系列</a></li>
+                            <li><a class="dropdown-item" href="./20240415-lemon_lemon2.html">檸檬蛋糕</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">檸檬冰淇淋</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li> -->
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- banner -->
+    <div class="banner bg-cover"></div>
+    <!-- 文+圖 -->
+    <div class="container">
+        <div class="timeline-section">
+            <div class="row mt-3 align-items-center timeline-section-pointer">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 text-danger fw-800 mb-3">關於我們<small class="text-muted"> About us</small></div>
+                        <p>檸檬小店，提供新鮮榨汁、蛋糕和冰淇淋，清新酸爽，為您帶來檸檬的天然風味體驗。</p>
+                        <ul class="list-unstyled text-muted fw-700 h6">
+                            <li>清新檸檬，酸甜滿懷</li>
+                            <li>檸檬風味，清涼一夏</li>
+                            <li>檸檬香氣，甜蜜回味</li>
+                            <li>檸檬小店，滿滿幸福感</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(./images/lemon10.avif); height:260px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 text-danger fw-800 mb-3">經營理念<small class="text-muted"> Vision</small></div>
+                        <p>以新鮮檸檬為基底，製作出清新、健康、美味的產品，讓每一口都充滿活力與幸福，讓顧客感受自然的美好。</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(./images/lemon11.avif); height:260px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 align-items-center timeline-section-pointer">
+                <div class="col-md-6 text-center ">
+                    <div class="mytext">
+                        <div class="h3 text-danger fw-800 mb-3">創業者的話<small class="text-muted"> Keep going</small></div>
+                        <p>勇敢追求夢想，堅持創新與熱情，即使路途艱辛，也要相信自己的能力與決心，踏出每一步，成就不凡。</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(./images/lemon12.avif); height:260px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 text-danger fw-800 mb-3">店家資訊<small class="text-muted"> Store information</small>
+                        </div>
+                        <ul class="list-unstyled text-muted fw-700 h6">
+                            <li>營業時間：全天24小時</li>
+                            <li>電話：22224444</li>
+                            <li>地址：台中市烏日區學田路30號</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(./images/lemon08.avif); height:260px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="h5 text-bg-dark text-center py-2 fw-800 mt-3">@潘潘的檸檬店 2024</div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
